@@ -1,0 +1,12 @@
+Table "schema_migrations" {
+  "version" int8 [pk, not null]
+  "dirty" bool [not null]
+}
+
+Table "users" {
+  "id" int4 [pk, not null, increment]
+  "name" varchar(50) [not null]
+  "email" varchar(100) [not null]
+  "password" text [not null]
+  "created_at" timestamp [not null, default: `CURRENT_TIMESTAMP`]
+}

@@ -1,0 +1,23 @@
+version: "3"
+
+tasks:
+  install:
+    cmds:
+      - go get github.com/golang-migrate/migrate/v4
+      - go get -u github.com/go-chi/chi/v5
+      - go get github.com/joho/godotenv
+      - go get github.com/lib/pq
+  up:
+    cmds:
+      - docker compose up -d
+    silent: true
+
+  down:
+    cmds:
+      - docker compose down
+    silent: true
+
+  run:
+    cmds:
+      - go run ./cmd/pos
+    silent: true
