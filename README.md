@@ -6,6 +6,8 @@
 
 ## Installation
 
+You must have installed golang v1.22
+
 Make sure you have installed the [taskfile](https://taskfile.dev/installation/) tool.
 
 You can use command below to install the required dependencies:
