@@ -52,7 +52,7 @@ Also you can document your database schema using [dbdocs](https://dbdocs.io/).
 
 ## TODOS
 
-- Update the config file using [viber](https://github.com/spf13/viper)
+- Update the config file using [viper](https://github.com/spf13/viper)
 - Implemented other use-cases:
   - login user
   - use redis cache for speedup
